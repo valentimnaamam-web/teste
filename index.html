@@ -20,6 +20,19 @@ input,select,button{font-family:inherit}
   .big-phone{font-size:36px !important}
   .hide-mobile{display:none !important}
 }
+.menu-mobile{display:none; position:static}
+.menu-mobile > summary{list-style:none; cursor:pointer}
+.menu-mobile > summary::-webkit-details-marker{display:none}
+.menu-mobile .icone-fechar{display:none}
+.menu-mobile[open] .icone-fechar{display:block}
+.menu-mobile[open] .icone-abrir{display:none}
+@media (max-width: 900px){
+  .menu-mobile{display:block}
+  header{flex-wrap:nowrap !important}
+  section[style*="padding: 110px 24px"], section[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="padding: 100px 24px 110px"], div[style*="padding: 110px 24px"], div[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="aspect-ratio: 4 / 5; border-radius: 22px"]{aspect-ratio: 4 / 3 !important}
+}
 
 body{margin:0;background:#FFFFFF}
 a{color:#6E5A82}a:hover{color:#4A3A5C}
@@ -30,6 +43,19 @@ input,select,button{font-family:inherit}
   .hero-title{font-size:42px !important}
   .section-title{font-size:34px !important}
   .hide-mobile{display:none !important}
+}
+.menu-mobile{display:none; position:static}
+.menu-mobile > summary{list-style:none; cursor:pointer}
+.menu-mobile > summary::-webkit-details-marker{display:none}
+.menu-mobile .icone-fechar{display:none}
+.menu-mobile[open] .icone-fechar{display:block}
+.menu-mobile[open] .icone-abrir{display:none}
+@media (max-width: 900px){
+  .menu-mobile{display:block}
+  header{flex-wrap:nowrap !important}
+  section[style*="padding: 110px 24px"], section[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="padding: 100px 24px 110px"], div[style*="padding: 110px 24px"], div[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="aspect-ratio: 4 / 5; border-radius: 22px"]{aspect-ratio: 4 / 3 !important}
 }
 
 body{margin:0;background:#FFFFFF}
@@ -43,6 +69,19 @@ input,select,button{font-family:inherit}
   .statement{font-size:30px !important}
   .hide-mobile{display:none !important}
 }
+.menu-mobile{display:none; position:static}
+.menu-mobile > summary{list-style:none; cursor:pointer}
+.menu-mobile > summary::-webkit-details-marker{display:none}
+.menu-mobile .icone-fechar{display:none}
+.menu-mobile[open] .icone-fechar{display:block}
+.menu-mobile[open] .icone-abrir{display:none}
+@media (max-width: 900px){
+  .menu-mobile{display:block}
+  header{flex-wrap:nowrap !important}
+  section[style*="padding: 110px 24px"], section[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="padding: 100px 24px 110px"], div[style*="padding: 110px 24px"], div[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="aspect-ratio: 4 / 5; border-radius: 22px"]{aspect-ratio: 4 / 3 !important}
+}
 
 body{margin:0;background:#FFFFFF}
 a{color:#6E5A82}a:hover{color:#4A3A5C}
@@ -50,8 +89,22 @@ a{color:#6E5A82}a:hover{color:#4A3A5C}
 input,select,textarea,button{font-family:inherit}
 @media (max-width: 900px){
   .nav-links{display:none !important}
+  .hide-mobile{display:none !important}
   .hero-title{font-size:42px !important}
   .section-title{font-size:34px !important}
+}
+.menu-mobile{display:none; position:static}
+.menu-mobile > summary{list-style:none; cursor:pointer}
+.menu-mobile > summary::-webkit-details-marker{display:none}
+.menu-mobile .icone-fechar{display:none}
+.menu-mobile[open] .icone-fechar{display:block}
+.menu-mobile[open] .icone-abrir{display:none}
+@media (max-width: 900px){
+  .menu-mobile{display:block}
+  header{flex-wrap:nowrap !important}
+  section[style*="padding: 110px 24px"], section[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="padding: 100px 24px 110px"], div[style*="padding: 110px 24px"], div[style*="padding: 100px 24px"]{padding-top:64px !important; padding-bottom:64px !important}
+  div[style*="aspect-ratio: 4 / 5; border-radius: 22px"]{aspect-ratio: 4 / 3 !important}
 }
 </style>
 </head>
@@ -63,7 +116,7 @@ input,select,textarea,button{font-family:inherit}
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 90px 90px">
 
     <!-- HEADER -->
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -78,8 +131,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
 
@@ -443,7 +497,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -458,8 +512,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -625,7 +680,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -640,8 +695,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -855,7 +911,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -870,8 +926,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -1080,7 +1137,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -1095,8 +1152,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -1477,7 +1535,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -1492,8 +1550,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" style="text-decoration: none; color: #2B1F3A">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Corpo clínico</a><a href="#/contato" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -1516,7 +1575,7 @@ input,select,textarea,button{font-family:inherit}
       </div>
     </div>
     <div style="flex: 1 1 480px; min-width: 0">
-      <h2 style="margin: 0; font-family: 'Gloock', Georgia, serif; font-weight: 400; font-size: 58px; line-height: 1.1">Equipe Sonimed</h2>
+      <h2 class="hero-title" style="margin: 0; font-family: 'Gloock', Georgia, serif; font-weight: 400; font-size: 58px; line-height: 1.1">Equipe Sonimed</h2>
       <p style="margin: 22px 0 0; font-size: 16px; line-height: 1.8; color: #6B6475">Contamos com uma equipe de profissionais dos mais qualificados, em constante treinamento e atualização, visando oferecer um atendimento de excelência e, sobretudo, humanizado.</p>
 
 
@@ -1657,7 +1716,7 @@ input,select,textarea,button{font-family:inherit}
 
   <!-- HERO WRAP -->
   <div style="background: #F4EFF9; border-radius: 0 0 50% 50% / 0 0 70px 70px">
-    <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+    <header style="position: relative; z-index: 30; max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
       <a href="#/inicio" aria-label="Sonimed — Início" style="text-decoration: none; display: flex; flex-direction: column; line-height: 1">
         <span style="font-family: 'Gloock', Georgia, serif; font-size: 30px; letter-spacing: 2px; color: #6E5A82"><span style="font-family: 'Great Vibes', cursive; font-size: 46px; letter-spacing: 0">S</span>ONIMED</span>
         <span style="font-size: 9px; letter-spacing: 2.2px; color: #6B6475; font-weight: 600; margin-top: 2px; border-top: 1px solid #C9B6DA; padding-top: 5px">CENTRO DE ULTRASSONOGRAFIA</span>
@@ -1672,8 +1731,9 @@ input,select,textarea,button{font-family:inherit}
         <a href="#/contato" aria-current="page" style="text-decoration: none; color: #7B6690">Contato</a>
       </nav>
       <div style="display: flex; gap: 12px; align-items: center">
-        <a href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
-        <a href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <a class="hide-mobile" href="https://wa.me/5524998288902" aria-label="WhatsApp" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z" /></svg></a>
+        <a class="hide-mobile" href="#" aria-label="Instagram" style="width: 46px; height: 46px; border-radius: 50%; background: #FFFFFF; color: #7B6690; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.10)"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.6" /></svg></a>
+        <details class="menu-mobile"><summary aria-label="Abrir menu" style="width: 46px; height: 46px; border-radius: 50%; background: #7B6690; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(74,58,92,0.18)"><svg class="icone-abrir" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg><svg class="icone-fechar" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18" /></svg></summary><nav aria-label="Menu" style="position: absolute; left: 16px; right: 16px; top: 100%; margin-top: 4px; background: #FFFFFF; border-radius: 22px; padding: 10px; box-shadow: 0 20px 50px rgba(43,31,58,0.22); display: flex; flex-direction: column; gap: 2px"><a href="#/inicio" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Início</a><a href="#/sobre" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Sobre</a><a href="#/missao" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Missão</a><a href="#/proposito" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Propósito</a><a href="#/exames" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Exames</a><a href="#/corpo-clinico" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 500; font-size: 16px; color: #2B1F3A">Corpo clínico</a><a href="#/contato" aria-current="page" style="text-decoration: none; padding: 14px 18px; border-radius: 14px; font-weight: 600; font-size: 16px; color: #7B6690; background: #F4EFF9">Contato</a></nav></details>
       </div>
     </header>
     <section style="max-width: 1240px; margin: 0 auto; padding: 60px 24px 110px; text-align: center">
@@ -1910,6 +1970,7 @@ Sex: 8h às 16h30</p>
     var target = document.getElementById('pagina-' + route) || document.getElementById('pagina-inicio');
     pages.forEach(function (p) { p.hidden = p !== target; });
     document.title = target.getAttribute('data-title');
+    document.querySelectorAll('details.menu-mobile[open]').forEach(function (d) { d.open = false; });
     window.scrollTo(0, 0);
   }
   window.addEventListener('hashchange', show);
